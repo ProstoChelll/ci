@@ -1,0 +1,32 @@
+/* header menu animation */
+.expand-enter-from {
+  margin-top: -300px;
+  opacity: 0;
+}
+.expand-enter-to {
+  margin-top: 0px;
+  opacity: 1;
+  transition: 0.5s;
+}
+.expand-leave-to {
+  margin-top: -300px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+/* header inside menu animation */
+.expandInMenu-enter-from {
+  left: -100px;
+  opacity: 0;
+}
+.expandInMenu-enter-to,
+.expandInMenu-leave-from {
+  left: 0px;
+  opacity: 1;
+  transition: 0.8s;
+}
+.expandInMenu-leave-to {
+  left: -100px;
+  opacity: 0;
+  transition: 0.4s;
+}

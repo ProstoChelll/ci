@@ -1,0 +1,29 @@
+@import url("./transition.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+}
+
+@layer components {
+  .ChoosePhoneCardListSelectValueTxt {
+    @apply w-[60px] font-medium text-[7px] leading-[18px] text-[#101010] hover:text-[#FFA542] cursor-pointer;
+  }
+  .footerIconsStyle {
+    @apply text-[#838383] text-[8px] hover:text-[#FFA542];
+  }
+
+  /* adaptive */
+  .lgChoosePhoneCardListSelectValueTxt {
+    @apply text-[15px] leading-[18px] w-[140px];
+  }
+}
